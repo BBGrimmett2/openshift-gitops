@@ -1,0 +1,20 @@
+---
+apiVersion: aap.ansible.com/v1alpha1
+kind: AnsibleAutomationPlatform
+metadata:
+  name: prod
+  namespace: ansible-automation-platform
+spec:
+  route_tls_termination_mechanism: Edge
+  no_log: true
+  redis_mode: standalone
+  api:
+    log_level: INFO
+    replicas: 1
+  database:
+    postgres_data_volume_init: false
+    idle_disabled: false
+  hub:
+    disabled: true
+  eda:
+    disabled: true
