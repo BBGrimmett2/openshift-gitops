@@ -19,6 +19,6 @@ spec:
   hub:
     disabled: true
   eda:
-    disabled: false
+    disabled: true
   # This is a default record refer to https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/html/installing_on_openshift_container_platform/appendix-operator-crs_appendix-operator-crs#operator-crs for adding existing components 
 
