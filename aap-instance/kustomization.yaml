@@ -4,3 +4,4 @@ kind: Kustomization
 
 resources:
   - ansibleautomationplatform.yaml
+  - console-link.yaml
