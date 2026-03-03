@@ -4,6 +4,8 @@ kind: AnsibleAutomationPlatform
 metadata:
   name: aap-deploy
   namespace: ansible-automation-platform
+  annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   route_tls_termination_mechanism: Edge
   no_log: true
@@ -18,3 +20,5 @@ spec:
     disabled: true
   eda:
     disabled: false
+  # This is a default record refer to https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/html/installing_on_openshift_container_platform/appendix-operator-crs_appendix-operator-crs#operator-crs for adding existing components 
+
