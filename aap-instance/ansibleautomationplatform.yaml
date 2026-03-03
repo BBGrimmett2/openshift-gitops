@@ -17,4 +17,4 @@ spec:
   hub:
     disabled: true
   eda:
-    disabled: true
+    disabled: false
